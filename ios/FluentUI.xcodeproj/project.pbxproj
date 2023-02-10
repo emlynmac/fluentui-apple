@@ -662,13 +662,6 @@
 			path = Obscurable;
 			sourceTree = "<group>";
 		};
-		5340828B26CFF298007716E1 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		53FC90BE25672F97008A06FD /* xcode */ = {
 			isa = PBXGroup;
 			children = (
@@ -821,7 +814,6 @@
 				A5CEC15E20D980B30016922A /* FluentUI.Tests */,
 				53FC90BE25672F97008A06FD /* xcode */,
 				A5CEC15220D980B20016922A /* Products */,
-				5340828B26CFF298007716E1 /* Recovered References */,
 				923DF2E62712B6AB00637646 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -1378,7 +1370,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "echo \"Copying FluentUI-Swift.h from $FLUENT_HSP_INPUT to $FLUENT_HSP_OUTPUT\"\n\n# Ensure the target include path exists\nmkdir -p $FLUENT_HSP_OUTPUT\n\n# Copy any file that looks like a Swift generated header to the include path\ncp $FLUENT_HSP_INPUT/FluentUI-Swift.h $FLUENT_HSP_OUTPUT\n";
+			shellScript = "echo \"Copying FluentUI-Swift.h from $FLUENT_HSP_INPUT to $FLUENT_HSP_OUTPUT\"\n\n# Ensure the target include path exists\nmkdir -p \"$FLUENT_HSP_OUTPUT\"\n\n# Copy any file that looks like a Swift generated header to the include path\ncp \"$FLUENT_HSP_INPUT/FluentUI-Swift.h\" \"$FLUENT_HSP_OUTPUT\"\n";
 		};
 		FD256C59218392B800EC9588 /* Run swiftlint */ = {
 			isa = PBXShellScriptBuildPhase;
